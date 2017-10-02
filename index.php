@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
         <link rel="stylesheet" href="css/default.css" />
         <title>Meine ToDo Liste</title>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
@@ -13,7 +13,6 @@
         <h1> </h1>
         <ul id="tabs">
             <li id="todo_tab" class="selected"><a href="#">To-Do</a></li>
-            <li id="add_tab"><a href="#">Add Entry</a></li>
         </ul>
         <div id="main">
             <div id="todo">
@@ -28,7 +27,7 @@
                             $description = $row->description;
                             $id = $row->id;
                     echo '<div class="item">';
-$data = <<<EOD
+                    $data = <<<EOD
 <h4> $title </h4>
 <p> $description </p>
 <input type="hidden" name="id" id="id" value="$id" />
