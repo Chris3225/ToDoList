@@ -13,7 +13,6 @@
         <h1> </h1>
         <ul id="tabs">
             <li class="selected"><a href="#todo">To-Do</a></li>
-            <li><a href="#addNewEntry">Add Entry</a></li>
         </ul>
         <div id="main">
             <div id="todo">
