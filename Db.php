@@ -12,7 +12,7 @@ class Db
 
     function __construct()
     {
-        $this->mysql = new mysqli('localhost', 'root', 'nineteen', 'db') or die('problem');
+        $this->mysql = new mysqli('localhost', 'root', '', 'db') or die('problem');
     }
 
     function delete_by_id($id)

@@ -27,17 +27,14 @@
                             $description = $row->description;
                             $id = $row->id;
                     echo '<div class="item">';
-
-                    $data = <<<EOD
-                        <h4> $Title </h4> 
-                        <p> $description </p> 
-                        
-                        <input type="hidden" name="id" id="id" value="$id" /> 
-  
-                        <div class="options"> 
-                            <a class="deleteEntryAnchor" href="delete.php?id=$id">D</a> 
-                            <a class="editEntry" href="#">E</a> 
-                        </div> 
+$data = <<<EOD
+<h4> $title </h4>
+<p> $description </p>
+<input type="hidden" name="id" id="id" value="$id" />
+<div class="options">
+<a class="deleteEntryAnchor" href="delete.php?id=$id">D</a>
+<a class="editEntry" href="#">E</a>
+</div>
 EOD;
           
                     echo $data; 
