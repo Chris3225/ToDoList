@@ -6,19 +6,14 @@
         <title>Meine ToDo Liste</title>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
-        <script>
-            $( function() {
-                $( "#tabs" ).tabs();
-            } );
-        </script>
     </head>
 
     <body>
     <div id="container">
         <h1> </h1>
         <ul id="tabs">
-            <li id="todo_tab" class="selected"><a href="#todo">To-Do</a></li>
-            <li id="add_tab"><a href="#addNewEntry">Add Entry</a></li>
+            <li class="selected"><a href="#todo">To-Do</a></li>
+            <li><a href="#addNewEntry">Add Entry</a></li>
         </ul>
         <div id="main">
             <div id="todo">
@@ -42,14 +37,14 @@
 <a class="editEntry" href="#">E</a>
 </div>
 EOD;
-          
-                    echo $data; 
-                    echo '</div>'; 
-                        } 
-                    } else { 
+
+                    echo $data;
+                    echo '</div>';
+                        }
+                    } else {
                         echo "<p>Keine Aufgaben in der Liste.</p>";
-                    } 
-                ?> 
+                    }
+                ?>
             </div>
             <div id="addNewEntry">
                 <hr />
