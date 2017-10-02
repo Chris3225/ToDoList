@@ -26,8 +26,8 @@
                             $title = $row->title;
                             $description = $row->description;
                             $id = $row->id;
-                    echo '<div class="item">';
-                    $data = <<<EOD
+                        echo '<div class="item">';
+                        $data = <<<EOD
 <h4> $title </h4>
 <p> $description </p>
 <input type="hidden" name="id" id="id" value="$id" />
